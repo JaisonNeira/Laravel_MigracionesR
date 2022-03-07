@@ -9,8 +9,11 @@ use Illuminate\Http\Request;
 
 class RelacionController extends Controller
 {
+
     public function index(){
-        $aprendises = Aprendi::all();
-        return view('welcome', compact('aprendises'));
+        $aprendises = aprendi::all();
+        $suma = aprendi::all()->sum('edad');
+        /*return view('welcome', compact('suma')); */
+        return view('welcome', compact('aprendises', 'suma'));
     }
 }

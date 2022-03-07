@@ -9,7 +9,7 @@
     <title>Naire</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
-
+    
     
     <!-- Bootstrap core CSS -->
 <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,7 @@
     
     <!-- Custom styles for this template -->
   </head>
+
   <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -53,7 +54,7 @@
               <h2>Tabla Aprendices</h2>
               <div>
 
-              <input class="form-control" type="text" placeholder="0" aria-label="Disabled input example" disabled>
+              <input class="form-control" type="text" placeholder="" value="{{$suma}}" aria-label="Disabled input example" disabled>
               </div>
               
             </div>
@@ -86,10 +87,6 @@
                     </tbody>
                 </table>
       </div>
-
-
-
-
       
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
